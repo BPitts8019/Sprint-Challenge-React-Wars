@@ -46,7 +46,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
    A side effect is something that affects something outside of the scope of the current function. The most common side effect is an API call or HTTP Request.
 
-	You sync side effects to a state/prop change using React Hooks method useEffect. The useEffect function allows a developer to tie one or more state variables or props as an array argument in the function call. If no array is given, then the side effect will trigger whenever any state variable or prop changes. If an empty array is given, the the side effect will trigger only when the component is mounted. (if used in the main app js, it is effectively a run-once event)
+	You sync side effects to a state/prop change using React Hooks method useEffect. The useEffect function allows a developer to tie one or more state variables or props as an array argument in the function call. If no array is given, then the side effect will trigger whenever any state variable or prop changes. If an empty array is given, then the side effect will trigger only when the component is mounted. (if used in the main app js, it is effectively a run-once event)
 
 ## Project Set Up
 
