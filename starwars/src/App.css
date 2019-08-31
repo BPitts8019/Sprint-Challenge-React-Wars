@@ -10,20 +10,14 @@
    margin: 2rem;
 }
 
-/* write your parent styles in here for your App.js */
-.App .card {
-   width: 350px;
-   box-shadow: 0px 5px 10px 2px #81755c;
-   /* height: 74px; */
-   /* overflow: hidden; */
-}
-
-.App .card-header {
+.App .cards {
    display: flex;
-   justify-content: space-around;
-   align-items: center;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-content: space-between
 }
 
+/* write your parent styles in here for your App.js */
 .App .card-header .fa-male {
    color: dodgerblue;
 }
