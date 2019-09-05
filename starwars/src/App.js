@@ -25,7 +25,7 @@ const App = () => {
             const starWarsChar = [];
 
             results.forEach(response => {starWarsChar.push(response.data)});
-            console.log(JSON.stringify(starWarsChar, null, 3));
+            // console.log(JSON.stringify(starWarsChar, null, 3));
             setCharacters(starWarsChar);
          })
          .catch(error => {
@@ -130,7 +130,7 @@ const App = () => {
          {
             (characters)
             ?  <div className="cards">
-                  {characters.map(char => <CharCard character={char} />)}
+                  {characters.map((char, index) => <CharCard key={index} character={char} />)}
                </div>
             :  <div className="loading">
                   <Spinner color="warning" />
